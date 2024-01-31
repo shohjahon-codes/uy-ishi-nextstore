@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- tailwindcss script js link -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- box icons -->
+    <link rel="stylesheet" href="./node_modules/boxicons/css/boxicons.min.css">
+    <!--Link font  -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Mirza:wght@400;500;600;700&family=Roboto:ital,wght@0,400;0,500;0,700;1,900&display=swap"
+        rel="stylesheet">
+    <!-- link css "loyiha yakunida output.css ulb qo'y !"-->
+    <link rel="stylesheet" href="./stayls/index.css">
+    <title>Document</title>
+</head>
+
+<body class="bg-[#ECF4FF]">
+    <!-- ---------------- header start ------------------- -->
+
+    <head>
+        <nav class="bg-white pb-3">
+            <div class="container mx-auto px-4 w-[1262px] flex items-center justify-end gap-[221px] mb-[5px]">
+                <p class="text-[16px] font-[539]">
+                    <i class='bx bxs-envelope'></i>
+                    Aloqa uchun
+                </p>
+                <select name="select" id="select1">
+                    <option value="English">English</option>
+                    <option value="UZ">UZ</option>
+                    <option value="=RU">RU</option>
+                </select>
+            </div>
+            <div class="container mx-auto px-4 w-[1262px] flex items-centerm justify-between my-3">
+                <img src="./assets/imgs/Logo.svg" alt="Logo" class="block h-[50px]">
+                <button
+                    class="bg-gradient-to-r from-purple-500 to-pink-500 py-[11px] px-[19px] text-white text-[16px] font-semibold flex items-center justify-center rounded-md">
+                    <i class='bx bx-menu'></i>
+                    Katalog
+                </button>
+                <div class="w-[410px] h-[50px] rounded-md relative border-solid border-2 border-sky-500 p-[1px] ">
+                    <input type="text" placeholder="Maxsulotlarni izlash" class="w-[352px] h-[46px] px-3 border-none ">
+                    <button
+                        class="bg-[#0D63F3] w-[64px] h-[50px] absolute right-[-1px] top-[-1px] rounded-r-md flex items-center justify-center">
+                        <img src="./assets/imgs/search.svg" alt="search">
+                    </button>
+                </div>
+                <div class="flex items-center gap-12">
+                    <p class="flex items-center gap-6">
+                        <a href="#" class="flex items-center justify-center p-[11px] rounded-md bg-[#ECF4FF]">
+                            <img src="./assets/imgs/favorite.svg" alt="favorite">
+                        </a>
+                        <a href="#" class="flex items-center justify-center p-[11px] rounded-md bg-[#ECF4FF]">
+                            <img src="./assets/imgs/shopping.svg" alt="shopping">
+                        </a>
+                    </p>
+                    <button
+                        class="py-[13px] flex items-center justify-center bg-gradient-to-r from-pink-200 to-purple-200 w-[105px] rounded-md">
+                        <a href="#">Kirish</a>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </head>
+    <!-- ---------------- header end ------------------- -->
+    <!-- ---------------- main start ------------------- -->
+    <main>
+        <!-----------section1 start----------------->
+        <section>
+            <div class="container mx-auto px-4 w-[1262px]">
+                <div class="relative my-10">
+                    <div class="overflow-hidden">
+                        <div class="carusel1 flex items-start duration-1000 ">
+                            <img src="./assets/imgs/imge1.jpg" alt="img" class="rounded-[23px] w-[100%]  block">
+                            <img src="./assets/imgs/carusel1img2.jpg" alt="img" class="rounded-[23px] w-[100%]   block">
+                            <img src="./assets/imgs/carusel1img3.jpg" alt="img"
+                                class="rounded-[23px] w-[100%] h-[100%]  block">
+                        </div>
+                    </div>
+                    <button id="btn3"
+                        class="w-[42px] h-[42px] p-[9px] bg-gradient-to-r from-purple-500 to-pink-500 rounded-[50%] absolute right-[-62px] top-[178px]"
+                        onclick="cekBtn3()">
+                        <img src="./assets/imgs/keyboard_arrow_right.svg" alt="keyboard_arrow_right">
+                        </butto>
+                        <button id="btn4"
+                            class="w-[42px] h-[42px] p-[9px] bg-gradient-to-r from-pink-200 to-purple-200 rounded-[50%] absolute left-[-62px] top-[178px]"
+                            onclick="cekBtn4()">
+                            <img src="./assets/imgs/keyboard_arrow_left.svg" alt="keyboard_arrow_left">
+                        </button>
+                        <div class="flex items-center justify-center gap-4 mt-5">
+                            <span
+                                class="block w-4 h-4 rounded-[50%] bg-gradient-to-r  from-purple-500 to-pink-500"></span>
+                            <span
+                                class="block w-4 h-4 rounded-[50%] bg-gradient-to-r from-pink-200 to-purple-200"></span>
+                            <span
+                                class="block w-4 h-4 rounded-[50%] bg-gradient-to-r from-pink-200 to-purple-200"></span>
+                            <span
+                                class="block w-4 h-4 rounded-[50%] bg-gradient-to-r from-pink-200 to-purple-200"></span>
+                            <span
+                                class="block w-4 h-4 rounded-[50%] bg-gradient-to-r from-pink-200 to-purple-200"></span>
+                        </div>
+                </div>
+            </div>
+        </section>
+        <!-----------section1 end----------------->
+        <!-----------section2 start----------------->
+        <section>
+            <div class="container mx-auto px-4 w-[1262px] my-5">
+                <h3 class="text-[28px] font-[591] text-[#1E1E1E]">
+                    Kategoriyalar
+                </h3>
+                <div class="flex items-center justify-between my-[29px]">
+                    <div class="w-[136px] h-[200px] py-[9px] bg-white rounded-lg">
+                        <img src="./assets/imgs/image3.png" alt="img">
+                        <p class="text-center mt-1">
+                            Smartfonlar
+                        </p>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div class="w-[136px] h-[200px] py-[9px] bg-white rounded-lg">
+                            <img src="./assets/imgs/image4.png" alt="img">
+                            <p class="text-center mt-1 text-[14px] leading-4">
+                                Kompyuterlar va
+                                notebooklar
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div class="w-[136px] h-[200px] py-[9px] bg-white rounded-lg">
+                            <img src="./assets/imgs/image5.png" alt="img">
+                            <p class="text-center mt-1">
+                                Televizorlar
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div class="w-[136px] h-[200px] py-[9px] bg-white rounded-lg">
+                            <img src="./assets/imgs/image6.png" alt="img">
+                            <p class="text-center mt-1">
+                                Aqlli soatlar
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div class="w-[136px] h-[200px] py-[9px] bg-white rounded-lg">
+                            <img src="./assets/imgs/image7.png" alt="img">
+                            <p class="text-center mt-1">
+                                Quloqchinlar
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div class="w-[136px] h-[200px] py-[9px] bg-white rounded-lg">
+                            <img src="./assets/imgs/image8.png" alt="img">
+                            <p class="text-center mt-1">
+                                Konditsioner
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div class="w-[136px] h-[200px] py-[9px] bg-white rounded-lg">
+                            <img src="./assets/imgs/image9.png" alt="img">
+                            <p class="text-center mt-1">
+                                Sovutkichlar
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div class="w-[136px] h-[200px] py-[9px] bg-white rounded-lg">
+                            <img src="./assets/imgs/image10.png" alt="img">
+                            <p class="text-center mt-1 leading-4">
+                                Kir yuvish
+                                mashinalari
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <button class="mb-5 w-[100%] bg-white py-[17px] rounded-[10px]">
+                    <a href="#" class="text-center text-[18px] font-[591]">Batafsil</a>
+                </button>
+            </div>
+        </section>
+        <!-----------section2 end----------------->
+        <!-----------section3 start----------------->
+        <section>
+            <div class="container mx-auto px-4 w-[1262px]">
+                <h3 class="text-[28px] font-[591] text-[#1E1E1E]">
+                    Eng ko’p sotilgan
+                </h3>
+                <div id="wrapper" class="grid grid-cols-5 gap-y-4 my-5">
+                   <!-- cod dinamic js -->
+                </div>
+                <button class="mb-5 w-[100%] bg-white py-[17px] rounded-[10px]">
+                    <a href="#" class="text-center text-[18px] font-[591]">Ko’proq ko’rish</a>
+                </button>
+            </div>
+        </section>
+        <!-----------section3 end----------------->
+        <!-----------section4 start----------------->
+        <section>
+            <div class="container mx-auto px-4 w-[1262px]">
+                <div class="relative my-10">
+                    <div class="overflow-hidden">
+                        <div class="carusel2 flex items-start duration-1000">
+                            <img src="./assets/imgs/image2.png" alt="img" class="rounded-lg w-[100%]  block">
+                            <img src="./assets/imgs/image2k.png" alt="img" class="rounded-lg w-[100%] block">
+                            <img src="./assets/imgs/image2.png" alt="img" class="rounded-lg w-[100%] block">
+                        </div>
+                    </div>
+                    <button id="btn5"
+                        class="w-[42px] h-[42px] p-[9px] bg-gradient-to-r from-purple-500 to-pink-500 rounded-[50%] absolute right-[-62px] top-[108px]"
+                        onclick="cekBtn5()">
+                        <img src="./assets/imgs/keyboard_arrow_right.svg" alt="keyboard_arrow_right">
+                        </butto>
+                        <button id="btn6"
+                            class="w-[42px] h-[42px] p-[9px] bg-gradient-to-r from-pink-200 to-purple-200 rounded-[50%] absolute left-[-62px] top-[108px]"
+                            onclick="cekBtn6()">
+                            <img src="./assets/imgs/keyboard_arrow_left.svg" alt="keyboard_arrow_left">
+                        </button>
+                        <div class="flex items-center justify-center gap-4 mt-5">
+                            <span
+                                class="block w-4 h-4 rounded-[50%] bg-gradient-to-r  from-purple-500 to-pink-500"></span>
+                            <span
+                                class="block w-4 h-4 rounded-[50%] bg-gradient-to-r from-pink-200 to-purple-200"></span>
+                            <span
+                                class="block w-4 h-4 rounded-[50%] bg-gradient-to-r from-pink-200 to-purple-200"></span>
+                        </div>
+                </div>
+            </div>
+        </section>
+        <!-----------section4 end----------------->
+        <!-----------section5 start----------------->
+        <section>
+            <div class="container mx-auto px-4 w-[1262px]">
+                <h3 class="text-[28px] font-[591] text-[#1E1E1E]">
+                    Eng ommabop
+                </h3>
+                <div id="wrapper2" class="grid grid-cols-5 gap-y-4 my-5">
+                    <!-- cod dinamic js -->
+               </div>
+                <button class="mb-5 w-[100%] bg-white py-[17px] rounded-[10px]">
+                    <a href="#" class="text-center text-[18px] font-[591]">Ko’proq ko’rish</a>
+                </button>
+            </div>
+        </section>
+        <!-----------section5 end----------------->
+        <!-----------section6 start----------------->
+        <section>
+            <div class="container mx-auto px-4 w-[1262px]">
+                <h3 class="text-[28px] font-[591] text-[#1E1E1E]">
+                    Brendlar bo’yicha
+                </h3>
+                <div class="grid grid-cols-6 gap-y-4 my-5">
+                    <div class="w-[188px] h-[100px] flex items-center justify-center bg-white rounded-lg">
+                        <img src="./assets/imgs/image12.png" alt="img">
+                    </div>
+                    <div class="w-[188px] h-[100px] flex items-center justify-center bg-white rounded-lg">
+                        <img src="./assets/imgs/image13.png" alt="img">
+                    </div>
+                    <div class="w-[188px] h-[100px] flex items-center justify-center bg-white rounded-lg">
+                        <img src="./assets/imgs/image14.png" alt="img">
+                    </div>
+                    <div class="w-[188px] h-[100px] flex items-center justify-center bg-white rounded-lg">
+                        <img src="./assets/imgs/image15.png" alt="img">
+                    </div>
+                    <div class="w-[188px] h-[100px] flex items-center justify-center bg-white rounded-lg">
+                        <img src="./assets/imgs/image16.png" alt="img">
+                    </div>
+                    <div class="w-[188px] h-[100px] flex items-center justify-center bg-white rounded-lg">
+                        <img src="./assets/imgs/image17.png" alt="img">
+                    </div>
+                    <div class="w-[188px] h-[100px] flex items-center justify-center bg-white rounded-lg">
+                        <img src="./assets/imgs/image18.png" alt="img">
+                    </div>
+                    <div class="w-[188px] h-[100px] flex items-center justify-center bg-white rounded-lg">
+                        <img src="./assets/imgs/image19.png" alt="img">
+                    </div>
+                    <div class="w-[188px] h-[100px] flex items-center justify-center bg-white rounded-lg">
+                        <img src="./assets/imgs/image20.png" alt="img">
+                    </div>
+                    <div class="w-[188px] h-[100px] flex items-center justify-center bg-white rounded-lg">
+                        <img src="./assets/imgs/image20.png" alt="img">
+                    </div>
+                    <div class="w-[188px] h-[100px] flex items-center justify-center bg-white rounded-lg">
+                        <img src="./assets/imgs/image20.png" alt="img">
+                    </div>
+                    <div class="w-[188px] h-[100px] flex items-center justify-center bg-white rounded-lg">
+                        <img src="./assets/imgs/image20.png" alt="img">
+                    </div>
+                    <div class="w-[188px] h-[100px] flex items-center justify-center bg-white rounded-lg">
+                        <img src="./assets/imgs/image20.png" alt="img">
+                    </div>
+                    <div class="w-[188px] h-[100px] flex items-center justify-center bg-white rounded-lg">
+                        <img src="./assets/imgs/image20.png" alt="img">
+                    </div>
+                    <div class="w-[188px] h-[100px] flex items-center justify-center bg-white rounded-lg">
+                        <img src="./assets/imgs/image20.png" alt="img">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-----------section6 end----------------->
+        <!-----------section7 start----------------->
+        <section>
+            <div class="container mx-auto px-4 w-[1262px]">
+                <div class="relative my-10">
+                    <div class="overflow-hidden">
+                        <div class="carusel flex items-start duration-1000 ">
+                            <img src="./assets/imgs/image2.png" alt="img" class="rounded-lg w-[100%]  block">
+                            <img src="./assets/imgs/image2k.png" alt="img" class="rounded-lg w-[100%] block">
+                            <img src="./assets/imgs/image2.png" alt="img" class="rounded-lg w-[100%] block">
+                        </div>
+                    </div>
+                    <button id="btn1"
+                        class=" w-[42px] h-[42px] p-[9px] bg-gradient-to-r from-purple-500 to-pink-500 rounded-[50%] absolute right-[-62px] top-[108px]"
+                        onclick="cekBtn1()">
+                        <img src="./assets/imgs/keyboard_arrow_right.svg" alt="keyboard_arrow_right">
+                        </butto>
+                        <button id="btn2"
+                            class="w-[42px] h-[42px] p-[9px] bg-gradient-to-r from-pink-200 to-purple-200 rounded-[50%] absolute left-[-62px] top-[108px]"
+                            onclick="cekBtn2()">
+                            <img src="./assets/imgs/keyboard_arrow_left.svg" alt="keyboard_arrow_left">
+                        </button>
+                        <div class="flex items-center justify-center gap-4 mt-5">
+                            <span
+                                class="block w-4 h-4 rounded-[50%] bg-gradient-to-r  from-purple-500 to-pink-500"></span>
+                            <span
+                                class="block w-4 h-4 rounded-[50%] bg-gradient-to-r from-pink-200 to-purple-200"></span>
+                            <span
+                                class="block w-4 h-4 rounded-[50%] bg-gradient-to-r from-pink-200 to-purple-200"></span>
+                        </div>
+                </div>
+            </div>
+        </section>
+        <!-----------section7 end----------------->
+        <!-----------section8 start----------------->
+        <section>
+            <div class="container mx-auto px-4 w-[1262px]">
+                <h3 class="text-[28px] font-[591] text-[#1E1E1E]">
+                    Do’konlarimiz
+                </h3>
+                <div class="grid grid-cols-6 gap-y-4 my-5 mb-10">
+                    <div class="w-[188px] h-[100px] flex items-center justify-center bg-white rounded-lg">
+                        <img src="./assets/imgs/image21.png" alt="img">
+                    </div>
+                    <div class="w-[188px] h-[100px] flex items-center justify-center bg-white rounded-lg">
+                        <img src="./assets/imgs/image22.png" alt="img">
+                    </div>
+                    <div class="w-[188px] h-[100px] flex items-center justify-center bg-white rounded-lg">
+                        <img src="./assets/imgs/image23.png" alt="img">
+                    </div>
+                    <div class="w-[188px] h-[100px] flex items-center justify-center bg-white rounded-lg">
+                        <img src="./assets/imgs/image24.png" alt="img">
+                    </div>
+                    <div class="w-[188px] h-[100px] flex items-center justify-center bg-white rounded-lg">
+                        <img src="./assets/imgs/image25.png" alt="img">
+                    </div>
+                    <div class="w-[188px] h-[100px] flex items-center justify-center bg-white rounded-lg">
+                        <img src="./assets/imgs/image20.png" alt="img">
+                    </div>
+                    <div class="w-[188px] h-[100px] flex items-center justify-center bg-white rounded-lg">
+                        <img src="./assets/imgs/image20.png" alt="img">
+                    </div>
+                    <div class="w-[188px] h-[100px] flex items-center justify-center bg-white rounded-lg">
+                        <img src="./assets/imgs/image20.png" alt="img">
+                    </div>
+                    <div class="w-[188px] h-[100px] flex items-center justify-center bg-white rounded-lg">
+                        <img src="./assets/imgs/image20.png" alt="img">
+                    </div>
+                    <div class="w-[188px] h-[100px] flex items-center justify-center bg-white rounded-lg">
+                        <img src="./assets/imgs/image20.png" alt="img">
+                    </div>
+                    <div class="w-[188px] h-[100px] flex items-center justify-center bg-white rounded-lg">
+                        <img src="./assets/imgs/image20.png" alt="img">
+                    </div>
+                    <div class="w-[188px] h-[100px] flex items-center justify-center bg-white rounded-lg">
+                        <img src="./assets/imgs/image20.png" alt="img">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-----------section8 end----------------->
+    </main>
+    <!-- ---------------- main end ------------------- -->
+    <!-- ---------------- footer start ------------------- -->
+    <footer>
+        <section class="w-[100%] py-[60px] bg-gradient-to-r from-[rgba(77,94,246,0.20)] to-[rgba(246,77,77,0.20)]">
+            <div class="container mx-auto px-4 w-[1262px]">
+                <div class="flex items-start justify-center gap-5 pb-10 border-b-[1px] border-red-200">
+                    <p class="flex flex-col gap-5 w-[188px]">
+                        <span class="text-[#1E1E1E] text-[16px] font-[653] block">
+                            Hujjatlar
+                        </span>
+                        <span class="text-[#1E1E1E] text-[16px] font-[539] block">
+                            Umumiy shartlar
+                        </span>
+                        <span class="text-[#1E1E1E] text-[16px] font-[539] block">
+                            Ofertalar arxivi
+                        </span>
+                        <span class="text-[#1E1E1E] text-[16px] font-[539] block">
+                            Nizom
+                        </span>
+                        <span class="text-[#1E1E1E] text-[16px] font-[539] block">
+                            Guvohnoma
+                        </span>
+                    </p>
+                    <p class="flex flex-col gap-5 w-[188px]">
+                        <span class="text-[#1E1E1E] text-[16px] font-[653] block">
+                            Servis
+                        </span>
+                        <span class="text-[#1E1E1E] text-[16px] font-[539] block">
+                            Do’konlar
+                        </span>
+                        <span class="text-[#1E1E1E] text-[16px] font-[539] block">
+                            Biz haqimizda
+                        </span>
+                        <span class="text-[#1E1E1E] text-[16px] font-[539] block">
+                            Hamkorlik uchun
+                        </span>
+                        <span class="text-[#1E1E1E] text-[16px] font-[539] block">
+                            Qaytarish
+                        </span>
+                        <span class="text-[#1E1E1E] text-[16px] font-[539] block">
+                            Promokodlar
+                        </span>
+                    </p>
+                    <p class="flex flex-col gap-5 w-[188px]">
+                        <span class="text-[#1E1E1E] text-[16px] font-[653] block">
+                            Mahsulotlar katalogi
+                        </span>
+                        <span class="text-[#1E1E1E] text-[16px] font-[539] block">
+                            Katalog 1
+                        </span>
+                        <span class="text-[#1E1E1E] text-[16px] font-[539] block">
+                            Katalog 1
+                        </span>
+                        <span class="text-[#1E1E1E] text-[16px] font-[539] block">
+                            Katalog 2
+                        </span>
+                        <span class="text-[#1E1E1E] text-[16px] font-[539] block">
+                            Katalog 2
+                        </span>
+                        <span class="text-[#1E1E1E] text-[16px] font-[539] block">
+                            Katalog 3
+                        </span>
+                        <span class="text-[#1E1E1E] text-[16px] font-[539] block">
+                            Katalog 3
+                        </span>
+                    </p>
+                    <p class="flex flex-col gap-5 w-[396px] ml-[200px]">
+                        <span class="text-[#1E1E1E] text-[16px] font-[653] block">
+                            Axbarot xizmati
+                        </span>
+                        <span class="text-[#1E1E1E] text-[16px] font-[539] block">
+                            contact.@nextstore.uz
+                        </span>
+                        <span class="text-[#1E1E1E] text-[16px] font-[539] block">
+                            +998 97 712 96 96 <br>
+                            +998 95 503 09 09
+                        </span>
+                        <span class="text-[#1E1E1E] text-[16px] font-[539] block">
+                            Sag’bon 186, Olmazor tumani, Toshkent, <br> O'zbekiston
+                        </span>
+                        <img src="./assets/imgs/Group.svg" alt="Group" class="block mt-2 h-[42px] w-[246px]">
+                    </p>
+                </div>
+                <p class="flex items-center justify-between mt-10">
+                    <span class="text-[#1E1E1E] text-[16px] font-[539] block">2022 Nextstore.com</span>
+                    <span class="text-[#1E1E1E] text-[16px] font-[539] block mr-[200px]">Powered by </span>
+                </p>
+            </div>
+        </section>
+    </footer>
+    <!-- ---------------- footer end ------------------- -->
+
+    <!-- test start -->
+    <!-- <section>
+        <div class="container mx-auto px-4 w-[1262px]">
+            <div id="wrapper3" class="grid grid-cols-5 gap-y-4 my-5">
+                 
+            </div>
+        </div>
+    </section> -->
+
+</body>
+<script src="./script.js"></script>
+
+</html>
